@@ -1,0 +1,16 @@
+1. 1 + 2 + 3 + ... n = (n(n+1))/2
+
+2. 1^2 + 2^2 + 3^2 + ... n^2 = (n(n-1)(2n+1))/6
+
+3. 3(a) + 7 + 11 + 15(b) = (n(a+b))/2     [Difference 7-3=4, 15-11=4]
+
+4. a + ak + ak^2 + ... b = (bk-a)/(k-1)   [ak/a = k, ak^2/ak = k]
+   3+6+12+24
+
+5. 1 + 2^2 + 2^3 + 2^4 ... + 2^(n-1) = 2^n - 1
+
+6. sum of multiples of a : sum = (n / a) * (a + (n / a * a)) / 2
+
+
+Problem solving from below hackerRank
+start with video number 21
