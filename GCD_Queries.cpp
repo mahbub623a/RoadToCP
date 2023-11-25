@@ -2,6 +2,11 @@
     Mahbubur Rahman
     United International University
 */
+
+/*
+    https://www.codechef.com/JAN15/problems/GCDQ#:~:text=You%20will%20be%20given%20Q,remaining%20array%20is%20non%20empty.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -45,7 +50,7 @@ void Hack()
     int forward[n + 10];
     int backward[n + 10];
     forward[0] = backward[n + 1] = 0;
-    
+
     loop(i, 1, n + 1)
     {
         cin >> arr[i];
