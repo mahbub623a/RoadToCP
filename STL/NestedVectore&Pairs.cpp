@@ -12,53 +12,53 @@ void print(vector<pair<int, int>> v)
 
 int main()
 {
-    // vector of pairs
-    // vector<pair<int, int>> v = {{1, 2}, {3, 4}, {4, 5}};
-    // print(v);
+    /// vector of pairs
+    vector<pair<int, int>> vp = {{1, 2}, {3, 4}, {4, 5}};
+    print(vp);
 
-    // int n;
-    // cin >> n;
-    // vector<pair<int, int>> vp;
-    // for (int i = 0; i < n; i++)
-    // {
-    //     int x, y;
-    //     cin >> x >> y;
-    //     vp.push_back({x, y});
-    //     // vp[i] = make_pair(x,y); // only for vp(n) type
-    //     // vp[i] = {x, y};
-    // }
-    // print(vp);
+    int n;
+    cin >> n;
+    vector<pair<int, int>> vp;
+    for (int i = 0; i < n; i++)
+    {
+        int x, y;
+        cin >> x >> y;
+        vp.push_back({x, y});
+        // vp[i] = make_pair(x,y); /// only for vp(n) type
+        // vp[i] = {x, y};
+    }
+    print(vp);
 
-    // vector of arrays
-    // int N;
-    // cin >> N;
-    // vector<int> v[N];
+    /// ***vector of arrays
+    int N;
+    cin >> N;
+    vector<int> v[N];
 
-    // for (int i = 0; i < N; i++)
-    // {
-    //     int s;
-    //     cin >> s;
-    //     for (int j = 0; j < s; j++)
-    //     {
-    //         int x;
-    //         cin >> x;
-    //         v[i].push_back(x);
-    //     }
-    // }
+    for (int i = 0; i < N; i++)
+    {
+        int s;
+        cin >> s;
+        for (int j = 0; j < s; j++)
+        {
+            int x;  
+            cin >> x;
+            v[i].push_back(x);
+        }
+    }
 
-    // for (int i = 0; i < N; i++)
-    // {
-    //     for (int j = 0; j < v[i].size(); j++)
-    //     {
-    //         cout << v[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < v[i].size(); j++)
+        {
+            cout << v[i][j] << " ";
+        }
+        cout << endl;
+    }
 
-    // vectors of vector
+    /// vectors of vector
     int s;
     cin >> s;
-    vector<vector<int>> vv;
+    vector<vector<int>> vv; 
 
     for (int i = 0; i < s; i++)
     {

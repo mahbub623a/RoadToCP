@@ -8,10 +8,10 @@ using namespace std;
 
 int main()
 {
-    // initialization
+    /// initialization
     vector<int> v; // <int, string, char, bool> anything we want
 
-    // declaration
+    /// declaration
     v.push_back(10);
 
     int n;
@@ -25,15 +25,14 @@ int main()
     cout << "size:" << v.size() << endl;
     print(v);
 
-    // vector of array
-    vector<int> vec(5, 3); // 5 size array which is filled up with 3
+    vector<int> vec(5, 3); /// 5 size array which is filled up with 3
     print(vec);
 
     vec.pop_back(); // delete from last
     print(vec);
 
-    // copy
-    vector<int> vec2 = vec; // O(n) time complexity
+    /// copy
+    vector<int> vec2 = vec; /// O(n) time complexity
     print(vec2);
 
     return 0;

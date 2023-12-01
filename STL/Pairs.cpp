@@ -3,25 +3,25 @@ using namespace std;
 
 int main()
 {
-    // initialization
+    /// initialization
     pair<int, string> p;
 
-    // declaration
+    /// declaration
     p = make_pair(2, "abc");
     // p = {2, "abcd"};
     // cin >> p.first;
     // cin >>p.second;
 
-    // copy
+    /// copy
     // pair<int, string> p1 = p;
-    pair<int, string> &p1 = p; // we can copy address of value
+    pair<int, string> &p1 = p; /// we can copy address of value
     p1.first = 3;
 
-    // print
+    /// print
     cout << p.first << " " << p.second << endl;
 
     // a[] = {1,2,3}, b[] = {4,5,6}
-    // pair array
+    /// pair array
     pair<int, int> pairArr[3]; // we can maintain two array
     pairArr[0] = {1, 4};
     pairArr[1] = {2, 5};

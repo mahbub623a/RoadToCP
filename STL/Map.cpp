@@ -9,10 +9,10 @@ void print(map<int, string> &m)
 
 int main()
 {
-    // initialize
+    /// initialize
     map<int, string> m; // map is one types of pairs
 
-    // declaration
+    /// declaration
     m[1] = "abc"; // T = log(n)
     m[5] = "cdc";
     m[3] = "acd";
@@ -20,7 +20,7 @@ int main()
     m.insert(make_pair(6, "mah"));
     m[5] = "cde";
     /*
-        map always store unique key
+        / map always store unique * key *
     */
 
     // print
@@ -34,16 +34,16 @@ int main()
     print(m);
     cout << endl;
 
-    // find value
-    auto it = m.find(7); // find return an iterator T = log(n)
-    if (it == m.end())   // if value does not exist, it return end() value
+    /// find value
+    auto it = m.find(7); /// find return an iterator T = log(n)
+    if (it == m.end())   /// if value does not exist, it return end() value
         cout << "No value\n";
     else
         cout << it->first << " " << it->second << endl;
 
     // erase
     /*
-        we can use index or use iterator to erase value
+        / we can use key or iterator to erase value
     */
 
     m.erase(3); //  T = log(n)
